@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Navbar } from "@/components/Header";
+import Navbar from "@/components/Header/Navbar";
 import { Sidebar } from "@/components/Sidebar";
 
 const MainLayout = ({ children }) => {
