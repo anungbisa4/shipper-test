@@ -6,10 +6,10 @@ Shipper Test
 
 This project using NEXT JS and Tailwind wrap on Pensilpatah Next Boilerplate. If you interest with Boilerplate and want to contribute please fork or star https://github.com/anungbisa4/pensilpatah-next-boilerplate.git. Its very help me. 
 
-## Result
-![myimage-alt-tag](./__result/1.png)
+## Results
+![myimage-alt-tag](./__result/1.jpg)
 ![myimage-alt-tag](./__result/2.png)
-![myimage-alt-tag](./__result/3.png)
+
 
 
 ### Installation
