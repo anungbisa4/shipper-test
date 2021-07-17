@@ -5,16 +5,16 @@ import { OverlaySidebar } from "@/components/Dialog";
 import { useRouter } from "next/router";
 
 const link = [
-  { url: "/", name: "Beranda", icon: <HomeIcon className="w-5 mr-4" /> },
+  { url: "/", name: "Beranda", icon: (active) => <HomeIcon className={`w-5 mr-4 ${active}`} /> },
   {
     url: "/driver-management",
     name: "Driver Management",
-    icon: <UserCircleIcon className="w-5 mr-4" />,
+    icon: (active) => <UserCircleIcon className={`w-5 mr-4 ${active}`} />
   },
   {
     url: "/pickup",
     name: "Pickup",
-    icon: <CalendarIcon className="w-5 mr-4" />,
+    icon: (active) => <CalendarIcon className={`w-5 mr-4 ${active}`} />
   },
 ];
 
@@ -41,12 +41,20 @@ const Sidebar = ({ open, setOpen }) => {
         {link.map((item, index) => {
           return (
             <Link href={item.url}>
-              <a className="py-3 px-4 flex relative">
+              <a className="py-3 px-4 flex relative items-center">
                 {router.pathname === item.url && (
                   <span className="absolute left-0 top-0 w-0.5 h-full bg-red-500" />
                 )}
-                {item.icon}
-                <span>{item.name}</span>
+                {item.icon(router.pathname === item.url ? "text-red-500" : "")}
+                <span
+                  className={
+                    router.pathname === item.url
+                      ? "text-red-500 font-semibold leading-tight"
+                      : "leading-tight"
+                  }
+                >
+                  {item.name}
+                </span>
               </a>
             </Link>
           );
