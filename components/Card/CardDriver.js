@@ -14,7 +14,7 @@ const CardDriver = ({ item }) => {
             {item.login.salt}
           </span>
         </div>
-        <button className="outline-none">
+        <button name="dots" className="outline-none">
           <DotsHorizontalIcon className="w-5 text-gray-400" />
         </button>
       </div>

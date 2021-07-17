@@ -40,6 +40,7 @@ const CardHeader = () => {
       <div className="w-full md:w-[280px]  flex flex-wrap md:flex-nowrap space-y-4 md:space-x-4 md:space-y-0">
         <div className="w-full relative">
           <button
+            name="search"
             onClick={() => handleSearch(value)}
             className="absolute flex items-center h-full ml-2 outline-none active:opacity-70"
           >

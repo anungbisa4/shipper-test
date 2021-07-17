@@ -15,6 +15,7 @@ const Navbar = ({ setOpenSidebar }) => {
             layout="fixed"
             width={128}
             height={29}
+            alt="shipper"
           />
         </div>
         <nav className="md:ml-auto flex flex-wrap items-center justify-center space-x-4">
