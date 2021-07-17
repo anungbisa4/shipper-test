@@ -1,11 +1,20 @@
 import { useState } from "react"
-import useSWR, { SWRConfig } from "swr"
-import fetcher from "@/utils/fetcher";
+import { Navbar } from "@/components/Header";
+import { Sidebar } from "@/components/Sidebar";
 
-const MainLayout = ({children}) => {
+const MainLayout = ({ children }) => {
+  const [open, setOpen] = useState(false)
   return (
     <>
-      <section>{children}</section>
+      <Navbar openSidebar={open} setOpenSidebar={setOpen} />
+      <main>
+        <div className="flex relative">
+          <div>
+            <Sidebar open={open} setOpen={setOpen} />
+          </div>
+          {children}
+        </div>
+      </main>
     </>
   );
 }

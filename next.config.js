@@ -11,7 +11,7 @@ const nextConfig = {
     return "-dlingo-secret-1234";
   },
   images: {
-    domains: [],
+    domains: ["blog.shipper.id", "randomuser.me"],
   },
   env: {
     baseUrl: process.env.NODE_BASE_URL,

@@ -16,7 +16,7 @@ const persistConfig = {
   key: "root_primary",
   storage: storageSession,
   stateReconciler: hardSet,
-  whitelist: ["count"],
+  whitelist: ["users"],
 };
 
 const persistedReducer = persistReducer(persistConfig, reducer)
