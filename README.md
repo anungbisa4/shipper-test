@@ -1,17 +1,20 @@
 # Project Title
 
-Pensilpatah Next Boilerplate
+Shipper Test
 
 ## Getting Started
 
-This project using NEXT JS and Tailwind
+This project using NEXT JS and Tailwind wrap on Pensilpatah Next Boilerplate. If you interest with Boilerplate and want to contribute please fork or star https://github.com/anungbisa4/pensilpatah-next-boilerplate.git. Its very help me. 
+
+## Result
+
 
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/anungbisa4/pensilpatah-next-boilerplate.git
+   git clone https://github.com/anungbisa4/shipper-test.git
    ```
 2. Install NPM packages
    ```sh
@@ -33,7 +36,7 @@ yarn dev
 ```
 
 
-Open [http://localhost:3002](http://localhost:3002) with your browser to see the result.
+Open [http://localhost:3005](http://localhost:3005) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
