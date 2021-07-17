@@ -10,8 +10,6 @@ This project using NEXT JS and Tailwind wrap on Pensilpatah Next Boilerplate. If
 ![myimage-alt-tag](./__result/1.jpg)
 ![myimage-alt-tag](./__result/2.png)
 
-
-
 ### Installation
 
 1. Clone the repo
