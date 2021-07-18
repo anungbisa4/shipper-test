@@ -1,4 +1,4 @@
-![Vercel](https://vercelbadge.vercel.app/api/pensilpatah/https://github.com/anungbisa4/shipper-test)
+![Vercel](https://vercelbadge.vercel.app/api/datejer/vercel-badge)
 
 # Project Title
 
