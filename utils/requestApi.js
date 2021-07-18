@@ -2,7 +2,7 @@ import axios from "axios";
 
   export const fetcher = async (...args) => {
     const Axios = axios.create({
-      baseURL: process.env.baseURL,
+      baseURL: process.env.baseUrl,
       timeout: 10000,
     });
     try{

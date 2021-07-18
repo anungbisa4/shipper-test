@@ -3,7 +3,7 @@ import { fetcher } from "@/utils/requestApi";
 
 export const getUsers = (results) => {
   return (dispatch) => {
-    fetcher(`https://randomuser.me/api?results=${results}`)
+    fetcher(`/api?results=${results}`)
       .then((res) => {
         dispatch({
           type: types["users/getUsers"],
