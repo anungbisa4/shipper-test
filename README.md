@@ -1,8 +1,5 @@
 ![Vercel](https://vercelbadge.vercel.app/api/datejer/vercel-badge)
-# Project Title
-
-Shipper Test
-
+# Shipper Test
 ## Getting Started
 
 This project using NEXT JS and Tailwind wrap on Pensilpatah Next Boilerplate. If you interest with Boilerplate and want to contribute please fork or star https://github.com/anungbisa4/pensilpatah-next-boilerplate.git. Its very help me. 
