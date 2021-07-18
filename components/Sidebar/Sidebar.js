@@ -40,7 +40,7 @@ const Sidebar = ({ open, setOpen }) => {
       <div className="flex flex-col">
         {link.map((item, index) => {
           return (
-            <Link href={item.url}>
+            <Link key={index} href={item.url}>
               <a className="py-3 px-4 flex relative items-center">
                 {router.pathname === item.url && (
                   <span className="absolute left-0 top-0 w-0.5 h-full bg-red-500" />

@@ -3,6 +3,8 @@ import { SearchIcon } from "@heroicons/react/outline";
 import { useSelector, useDispatch } from "react-redux";
 import { searchDriver, setPage, getFirstPage } from "@/store/users/action";
 
+import _debounce from "lodash/debounce";
+
 const CardHeader = () => {
   const [value, setValue] = useState("")
   const { users } = useSelector(state => state)
@@ -15,12 +17,20 @@ const CardHeader = () => {
   const handleChange = useCallback((e) => {
     setValue(e.target.value)
     if (e.target.value === "") {
-      console.log("testt")
       dispatch(setPage("pageFirst"));
-      dispatch(getFirstPage(users.data));
+      return dispatch(getFirstPage(users.data));
     }
+    delayQuery(e.target.value);
   }, [value])
 
+  const delayQuery = useCallback(
+    _debounce((q) => {
+      console.log(q)
+      if (q.length !== 1) {
+        handleSearch(q);
+      }
+    }, 500)
+  ,[]);
   const handleKeydown = (e) => {
     if (e.key === "Enter") {
       handleSearch(value)
@@ -48,7 +58,7 @@ const CardHeader = () => {
           </button>
           <input
             className="w-full text-xs p-2 pl-6 outline-none border-2"
-            placeholder="Cari Driver"
+            placeholder="Cari Driver (ex: jennifer)"
             onChange={handleChange}
             onKeyDown={handleKeydown}
           />
